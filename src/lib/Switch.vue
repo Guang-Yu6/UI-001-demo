@@ -1,19 +1,22 @@
 <template>
-  <button @click="toggle" :class="{checked:x}">
+  <button @click="toggle" :class="{checked:value}">
     <span>1</span>
   </button>
 </template>
 
 <script lang='ts'>
-import {ref} from "vue";
 
 export default {
-  setup(){
-    const x = ref(false) // 代表切换
+  props:{
+    value:Boolean
+  },
+  setup(props,context){
+    // const x = ref(false) // 代表切换
     const toggle = () => { // 点击后取反布尔值
-      x.value = !x.value
+      // x.value = !x.value
+      context.emit('input',!props.value)
     }
-    return {x,toggle}
+    return {toggle}
   }
 }
 </script>

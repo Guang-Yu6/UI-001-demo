@@ -19,7 +19,10 @@
       </ol>
     </aside>
 
-    <main>主内容</main>
+    <main>
+      主页
+      <router-view></router-view>
+    </main>
 
   </div>
 </template>
@@ -27,6 +30,7 @@
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
 import {inject, Ref} from "vue";
+
 export default {
   components: {Topnav},
   setup(){
@@ -52,10 +56,7 @@ aside {
     }
   }
   @media  (max-width: 500px){
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 70px;
+
   }
 }
 </style>

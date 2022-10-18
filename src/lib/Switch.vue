@@ -8,13 +8,13 @@
 
 export default {
   props:{
-    value:Boolean
+    value:Boolean,
   },
   setup(props,context){
     // const x = ref(false) // 代表切换
     const toggle = () => { // 点击后取反布尔值
       // x.value = !x.value
-      context.emit('input',!props.value)
+      context.emit('update:value',!props.value)
     }
     return {toggle}
   }

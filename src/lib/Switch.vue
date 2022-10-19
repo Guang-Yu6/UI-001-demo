@@ -1,13 +1,13 @@
 <template>
   <button @click="toggle" :class="{checked:value}">
-    <span>1</span>
+    <span>子</span>
   </button>
 </template>
 
 <script lang='ts'>
 
 export default {
-  props:{
+  props:{  // 接收的是外部的默认状态
     value:Boolean,
   },
   setup(props,context){
@@ -15,6 +15,7 @@ export default {
     const toggle = () => { // 点击后取反布尔值
       // x.value = !x.value
       context.emit('update:value',!props.value)
+      // 再传出去外面点击后的状态
     }
     return {toggle}
   }

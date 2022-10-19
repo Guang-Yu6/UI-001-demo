@@ -1,5 +1,6 @@
 <template>
   <div>
+    父亲
     <Switch v-model:value='bool'/>
   </div>
 </template>

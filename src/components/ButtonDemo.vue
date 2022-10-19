@@ -4,15 +4,21 @@
   </div>
   <h1>实例</h1>
   <div>
-    <Button>父亲组件</Button>
+    <ButtonA @click="onClick">父亲组件</ButtonA>
   </div>
 
 </template>
 
 <script lang='ts'>
-import Button from '../lib/Button.vue'
+import ButtonA from '../lib/Button.vue'
 export default {
-  components:{Button},
+  components:{ButtonA},
+  setup(){
+    const onClick = () =>{
+      console.log('ni')
+    }
+    return {onClick}
+  }
 }
 </script>
 

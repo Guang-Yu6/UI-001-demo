@@ -1,16 +1,20 @@
 <template>
-    <button class="gulu-button"
-            :class="`gulu-theme-${theme}`">
-      <slot/>
-    </button>
+  <button class="gulu-button"
+          :class="`gulu-theme-${theme}`">
+    <slot/>
+  </button>
 </template>
 
 <script lang='ts'>
 export default {
   props: {
-    theme:{
-      type:String,
-      default:'默认'
+    theme: {
+      type: String,
+      default: '默认'
+    },
+    size: {
+      type: String,
+      default: 'normal'
     }
   },
   //inheritAttrs:false    DIV不继承
@@ -44,7 +48,7 @@ $radius: 4px;
   border-radius: $radius;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
 
-  & + & { //gulu button + gulu butoon
+  & + & { //gulu button + gulu button
     margin-left: 8px;
   }
 
@@ -60,6 +64,26 @@ $radius: 4px;
 
   &::-moz-focus-inner {
     border: 0;
+  }
+
+  &.gulu-theme-link {
+    border-color: transparent;
+    box-shadow: none;
+    color: $blue;
+
+    &:hover, &:focus {
+      color: lighten($blue, 10%);
+    }
+  }
+
+  &.gulu-theme-text {
+    border-color: transparent;
+    box-shadow: none;
+    color: inherit;
+
+    &:hover, &:focus {
+      background: darken(white, 5%);;
+    }
   }
 }
 </style>

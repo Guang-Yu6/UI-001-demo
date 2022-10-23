@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0af9f1e6-e240-4572-bcd6-6ebe3037a167" name="更改" comment="调节 topnav 和 aside 的位置">
+      <change afterPath="$PROJECT_DIR$/src/lib/Dialog.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ButtonDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ButtonDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DialogDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DialogDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Button.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +59,10 @@
       <updated>1665914198551</updated>
       <workItem from="1665914199824" duration="19705000" />
       <workItem from="1666074649941" duration="5536000" />
-      <workItem from="1666166891729" duration="6878000" />
+      <workItem from="1666166891729" duration="12119000" />
+      <workItem from="1666350178398" duration="1306000" />
+      <workItem from="1666420183618" duration="1318000" />
+      <workItem from="1666495464057" duration="1285000" />
     </task>
     <servers />
   </component>

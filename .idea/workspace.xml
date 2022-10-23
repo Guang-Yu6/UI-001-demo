@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0af9f1e6-e240-4572-bcd6-6ebe3037a167" name="更改" comment="调节 topnav 和 aside 的位置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DialogDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DialogDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Dialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Dialog.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,7 @@
       <workItem from="1666166891729" duration="12119000" />
       <workItem from="1666350178398" duration="1306000" />
       <workItem from="1666420183618" duration="1318000" />
-      <workItem from="1666495464057" duration="1929000" />
+      <workItem from="1666495464057" duration="3101000" />
     </task>
     <servers />
   </component>

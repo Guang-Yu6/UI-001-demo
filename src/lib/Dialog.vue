@@ -1,9 +1,9 @@
 <template>
-
+<template v-if="visible">
   <div class="gulu-dialog-overlay"></div>
   <div class="gulu-dialog-wrapper">
     <div class="gulu-dialog">
-      <header>标题1</header>
+      <header>标题1<span class="gulu-dialog-close"></span></header>
 
       <main>
         <p>第一行</p>
@@ -16,13 +16,19 @@
       </footer>
     </div>
   </div>
-
+</template>
 </template>
 
 <script lang="ts">
 import Button from './Button.vue'
 
 export default {
+  props:{
+    visible: {
+      type: Boolean,
+      default: false
+    }
+  },
   components: {Button}
 }
 </script>
